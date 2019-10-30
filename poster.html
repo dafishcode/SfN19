@@ -1,0 +1,259 @@
+<!DOCTYPE HTML> <!-- HTML v5 -->
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>SfN Poster Rosch et al 2019</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+	<script>
+
+		function togglevis(n) {
+
+			var s = "" + n;
+    		var x = document.getElementsByClassName(s)[0];
+    		x.style.display = "block";
+
+    		for(var i=1; i<5; i++){
+    			if(i != n){
+    			var ys = "" + i;
+    			var y = document.getElementsByClassName(ys)[0];
+    			y.style.display = "none";
+    		}
+    		}
+		}
+
+		function middleoff() {
+
+    		for(var i=1; i<5; i++){
+    			var ys = "" + i;
+    			var y = document.getElementsByClassName(ys)[0];
+    			y.style.display = "none";
+    		}
+		}
+
+		var vid = document.getElementById('NMF_rotate');
+		vid.playbackRate = 10;
+
+	</script>
+
+
+</head>
+<body>
+
+<div id = "container">
+
+	<!-- HEADER AREA -->
+	<div id = "header"; onclick='middleoff()'>
+	<div style="float:left; width:1110px; margin-top: 20px; margin-left:40px">
+
+		<h1>Whole brain seizure networks in zebrafish models of <em>GABRA1</em> and <em>GABRG2</em> related epilepsies</h1>
+		<h2> R. E. Rosch<sup>1,2,3 *</sup>, D. R. W. Burrows<sup>1 *</sup>, &#201;. Samarut<sup>4</sup>, M. P. Meyer<sup>1</sup></h2>
+	</div>
+	<div style="float:left; width:450px; margin-top: 20px; margin-left:40px">
+		<p style="color:#BEE4DA; font-style: italic;" >
+			1 - MRC Centre for Neurodevelopmental Disorders, Institute of Psychiatry, Psychology and Neuroscience, King's College London, London, UK;
+			2 - Complex Systems Group, Department of Bioengineering, University of Pennsylvania, Philadelphia PA, USA;
+			3 - Department of Paediatric Neurology, Great Ormond Street Hospital NHS Foundation Trust, London, UK;
+			4 - Department of Neurosciences, Research Centre of the University of Montreal Hospital Center, Montreal QC, Canada; <br /><br />
+			<b>* These authors contributed equally</b>
+		</p>
+		</div>
+		<div style="float:left; margin-top:35px; margin-left:40px ">
+					<image src="Images/Logos.png", width=200></image>
+		</div>
+
+	</div>
+
+
+	<!-- LEFT BOXES -->
+	<div id = "side"; style="left:0px; background:#eeeeee">
+		<!--==============================================================-->
+		<!-- Top Left No 1 -->
+		<!--==============================================================-->
+		<div id = "doublebox-top"; onclick='togglevis(1)'>
+			<div id = "box"; tabindex = "1";>
+			<div id = "textbox">
+				<h3 class = "boxhead"> Knock-outs of <em>gabra1</em> and <em>gabrg2</em> cause epileptic phenotypes in zebrafish  </h3>
+				<ul class = "normtext">
+					<li> GABA-A receptors are the predominant fast inhibitory neurotransmitters in the brain and are implicated in epilepsy </li>
+					<li> Zebrafish have emerged as novel a novel model organism for epilepsy research, with an increasing number of genetic lines now in development </li>
+					<li> Zebrafish lines of two human genetic epilepsies <em>GABRA1</em> and <em>GABRG2</em> show evidence of reflex convulsive seizures </li>
+					<li> <strong> Loss of function in different GABA-A subunits is associated with behaviourally distinct phenotypes in zebrafish models of the disorder </strong>
+				</ul>
+			</div>
+			</div>
+
+			<div id = "box"; style="text-align:center; margin-top:0px">
+				<video loop autoplay height=325px style="margin-top:25px" >
+						<source src="https://www.dropbox.com/s/u8nmsjcjt4w5yth/fish_seizure.mov?raw=1" type="video/mp4">
+				</video>
+			</div>
+
+		</div>
+
+		<!--==============================================================-->
+		<!-- Bottom Left No 2 -->
+		<!--==============================================================-->
+		<div id = "doublebox-bottom"; onclick='togglevis(2)'>
+			<div id = "box"; tabindex = "2">
+				<div id = "textbox">
+					<h3 class = "boxhead">There are persistent genotype-specific functional brain network differences</h3>
+					<ul class = "normtext">
+						<li>We estimate time varying interregional functional connectivity over a five minute time window following light stimulation</li>
+						<li>After initial response to the light stimulation, functional connectivity reaches a steady state</li>
+						<li>The steady state is dominated by distinct, genotype specific steady state connectivity patterns</li>
+						<li> <strong> The different KO zebrafish lines show distinct differences in functional connectivity, extending beyond ictal stimulus responses
+						</strong></li>
+					</ul>
+				</div>
+			</div>
+
+			<div id = "box";  style="text-align:center; margin-top:0px">
+
+				<video loop autoplay height=325px style="margin-top:25px">
+						<source src="https://www.dropbox.com/s/ncvgzqt12i3l3he/Correlation_matrix.mov?raw=1" type="video/mp4">
+				</video>
+				<!-- <img class = "frontpage" src = "Images/Fig_3_NNMF_Net.png" style="width:450px; height:auto; margin-top:75px; margin-left:0px"> -->
+			</div>
+		</div>
+
+	</div> <!-- End of LEFT BOXES -->
+
+	<!-- RIGHT BOXES -->
+	<div id = "side"; style="left:960px; background:#eeeeee">
+		<!--==============================================================-->
+		<!-- Top right No 3 -->
+		<!--==============================================================-->
+		<div id = "doublebox-top"; onclick='togglevis(3)'>
+			<div id = "box"; style="text-align:center; margin-top:0px">
+				<video id = "NMF_rotate" loop autoplay height=325px style="margin-top:25px">
+						<source src="https://www.dropbox.com/s/i47l9m9ousqbsx6/Fig_2_NMF_Rotation.mov?raw=1" type="video/mp4">
+				</video>
+			</div>
+
+			<div id = "box"; tabindex = "3">
+				<div id = "textbox">
+					<h3 class = "boxhead"> Neuronal responses to visual stimuli show genotype-specific signatures</h3>
+					<ul class = "normtext">
+						<li> We performed light sheet imaging of 3-4 PTU-raised wildtype, <em>gabra1 -/-</em>, and <em>gabrg2 -/-</em> larvae at 6-8dpf</li>
+						<li> Both <em>gabra1 -/-</em>, and <em>gabrg2 -/-</em> larvae show patterns of hyuperexcitability in response to light stimulation</li>
+						<li> The predominant different in overall activity distribution occurs early after light exposure </li>
+						<li> <strong> Brain-wide light-induced responses in the different lines are separable in even a low dimensional representation  </strong></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!--==============================================================-->
+		<!-- Bottom Right No 4 -->
+		<!--==============================================================-->
+		<div id = "doublebox-bottom"; onclick='togglevis(4)'>
+			<div id = "box">
+				<img class = "frontpage" src = "Images/Fig_4_DCM_Method.png" style="width:400px; height:auto; margin-top:60px; margin-left:25px">
+			</div>
+
+			<div id = "box"; tabindex = "4">
+			<div id = "textbox">
+				<h3 class = "boxhead">GABA subunit knockouts affect distinct parts of synaptic network coupling</h3>
+				<ul class = "normtext">
+					<li> distributed difference in functional connectivity may result from more localised differences in effective connectivity </li>
+					<li> dynamic causal modelling (DCM) allows us to estimate parameters of a biophysical population model based on the observed data</li>
+					<li> we find genotype specific differences in network connectivity of these model descriptions </li>
+					<li> <strong> GABA subunit knockouts may target anatomically or physiologically defined subsets of GABAergic synapses</strong></li>
+				</ul>
+
+			</div>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- MIDDLE BIT-->
+	<div id = "central" class = "1" style = "display:none">
+		<iframe id = "centrali"; src = "intro_fishlines.html"></iframe>
+	</div>
+
+	<div id = "central" class = "2" style = "display:none">
+		<iframe id = "centrali"; src = "nmf_net.html"></iframe>
+	</div>
+
+	<div id = "central" class = "3" style = "display:none">
+		<iframe id = "centrali"; src = "nmf_states.html"></iframe>
+	</div>
+
+	<div id = "central" class = "4" style = "display:none">
+		<iframe id = "centrali"; src = "simulations.html"></iframe>
+	</div>
+
+
+
+
+	<!-- 	<div id = "box"; style="background:#ccc;"> Introduction </div>
+	<div id = "box"; style="background:#ddd;"> Methods </div> -->
+
+
+	<!-- FOOTER AREA -->
+	<div id = "footer", onclick='middleoff()'>
+		<table width = 100%>
+		<tr height = 100px>
+
+			<td width = 8% style = "text-align: center; vertical-align: middle">
+				<img src = "Images/Photos.png" height = 90 style = "">
+			</td>
+
+			<td width = 8% >
+				<p style = "font-size:12pt; text-align:left; color:white">
+					<b> Richard E Rosch </b> <br /> <em>MD PhD</em>
+				</p>
+			</td>
+			<td width = 20%>
+				<p style = "font-size:10pt">
+					<img src = "Images/email.png" class = "icon"> <a href = "mailto:richard.rosch@kcl.ac.uk"> richard.rosch@kcl.ac.uk</a> <br>
+					<img src = "Images/url.png" class = "icon"> <a href = "http://www.dynamic-brains.com"> dynamic-brains.com </a> <br>
+					<img src = "Images/github.png" class = "icon"> <a href = "https://github.com/roschkoenig/Zebrafish_Seizures"> github.com/roschkoenig </a><br>
+					<img src = "Images/twitter.png" class = "icon"> <a href = "http://www.twitter.com/roschkoenig"> @roschkoenig</a> <br>
+				</p>
+
+			</td>
+
+
+			<td width = 10% style = "text-align: center; vertical-align: middle">
+					<img src = "Images/Liao_et_al.png" height = 65 style = "margin-top: 0px">
+					<p class=smaller style="text-align:center; color:white; margin-top:2px">
+						<b>Liao et al 2019</b><br />
+						<em>GABRG2 characterisation</em>
+					</p>
+
+				</td>
+				<td width = 10% style = "text-align: center; vertical-align: middle">
+					<img src = "Images/Samarut_et_al.png" height = 65 style = "margin-top: 0px">
+					<p class=smaller style="text-align:center; color:white; margin-top:2px">
+						<b>Samarut et al 2018</b><br />
+						<em>GABRA1 characterisation</em>
+					</p>
+				</td>
+				<td width = 10% style = "text-align: center; vertical-align: middle">
+					<img src = "Images/Rosch_et_al.png" height = 65 style = "margin-top: 0px">
+					<p class=smaller style="text-align:center; color:white; margin-top:2px">
+						<b>Rosch et al 2018</b><br />
+						<em>Network Analysis</em>
+					</p>
+
+			</td>
+
+			<td width = 70% style = "text-align: right; vertical-align: middle">
+				<img src = "Images/MRC_CNDD.png" height = 45 style = "margin-left:25px; margin-bottom: 23px">
+				<img src = "Images/PENN.png" height = 40 style = "margin-left:25px; margin-bottom: 25px">
+				<img src = "Images/CRCHUM.png" height = 45 style = "margin-left:25px; margin-bottom: 23px">
+				<img src = "Images/WT.png" height = 70 style = "margin-left:25px; margin-bottom:10px">
+			</td>
+
+		</tr>
+		</table>
+
+	</div>
+
+</div>
+</body>
+</html>

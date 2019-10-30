@@ -1,0 +1,1 @@
+cd "/Users/roschkoenig/Google Drive File Stream/My Drive/Presentations/1910 SfN/Local/NMF_States_Shiny"; R -e "shiny::runApp('app.R', port=1203)"

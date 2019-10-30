@@ -1,0 +1,50 @@
+<!DOCTYPE HTML> <!-- HTML v5 -->
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<div style = "position:absolute; top:0px; width:940px; height:460px; overflow:hidden;">
+	<img src = "Images/subgraphs.png" style = 'height:460px; margin-left:75px'>
+	<video controls autoplay loop height=465px style="margin-left:10px	">
+  		<source src="https://www.dropbox.com/s/as5b7of81yigve0/correlation.mov?raw=1" type="video/mp4">
+	</video>
+
+	</div>
+
+
+	<div style = "position:absolute; top:460px; width:940px;">
+	<div id = "textbox">
+		<table>
+			<tr><strong> Non-negative matrix factorisation identifies persistent network differences between genotypes</strong> </tr>
+			<tr>
+				<td style = "padding-right:10px; width:400px">
+				<p class = "smaller">
+					<strong><em>[NMF Analysis]</em></strong> Using a sliding window approach, we can identify time-varying functional connectivity, using simple correlation across the anatomical regions estimated within each time window. <br />
+					We can then concatenate unique edges over time into a <em>n</em> by <em>k</em> array, where <em>n</em> is the number of unique edges and <em>k</em> the number of time windows sampled. Using sparsity constrained non-negative matrix factorisation, we can decompose the full set of connectivity edges into variably expressed subnetworks, and their time varying expression profiles.
+				</p>
+
+				</p>
+				</td>
+
+				<td style = "padding-left:10px">
+				<p class = "smaller">
+					<strong><em>[Left]</em></strong> We can represent factors derived from NMF as subnetworks that are variably expressed over time. Networks derived from a four-factor factorisation are shown here.
+				</p>
+				<p class = "smaller">
+					<strong><em>[Middle]</em></strong> The factors' subnetwork expression varies over time, but shows persistent differences across genotypes.
+				</p>
+
+				<p class = "smaller">
+					<strong><em>[Right]</em></strong> Full time varying connectivity matrices are shown here, with time points corresponding to the dashed line in the middle plot.
+				</p>
+
+				</td>
+			</tr>
+
+		</table>
+	</div>
+	</div>
+
+</body>
