@@ -12,7 +12,7 @@ library(plotly)
 
 # Housekeeping and loading  / restructuring of data 
 #==========================================================================
-setwd("~/Google Drive File Stream/My Drive/Presentations/1910 SfN/Local/NMF_States_Shiny")
+# setwd("~/Google Drive File Stream/My Drive/Presentations/1910 SfN/Local/NMF_States_Shiny")
 W   <- read.csv('factor_weights.csv')
 H   <- read.csv('temp_expression.csv')
 ID  <- data.frame(wt=seq(from=1,to=10000, by=2),ga1=seq(from=10001,to=20000, by=2),gg2=seq(from=20001,to=30000, by=2))

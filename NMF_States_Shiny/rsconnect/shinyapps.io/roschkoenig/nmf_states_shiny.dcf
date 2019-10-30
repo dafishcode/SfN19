@@ -1,0 +1,10 @@
+name: nmf_states_shiny
+title:
+username:
+account: roschkoenig
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 1403190
+bundleId: 2552519
+url: https://roschkoenig.shinyapps.io/nmf_states_shiny/
+when: 1572470311.46933
