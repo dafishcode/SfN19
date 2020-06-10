@@ -1,2 +1,1 @@
-# 1910-SfN-GABA-Mutants
- Dynamic Poster for SfN 2019
+ Dynamic Poster for CNS 2020
